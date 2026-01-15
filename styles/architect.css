@@ -215,6 +215,16 @@ nav {
     grid-template-columns: repeat(5, 1fr);
 }
 
+footer{
+    background-color: #FFF4E7;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+    margin: 130px auto 116px;
+    border-radius: 8px;
+}
+
 /* responsive design */
 @media screen and (max-width: 576px) {
     nav, .teams, .features {
