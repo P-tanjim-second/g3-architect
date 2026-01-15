@@ -39,6 +39,11 @@ main>section {
     background-color: rgba(255, 144, 14, 0.1);
 }
 
+.section-title{
+    font-size: 2.81rem;
+    font-weight: 700;
+}
+
 .btn-primary {
     background-color: #FF900E;
     color: white;
@@ -111,16 +116,43 @@ nav {
     max-width: 530px;
 }
 
-.team-title{
-    font-size: 2.81rem;
-    font-weight: 700;
-}
 .feature-des{
     margin-bottom: 30px;
     line-height: 26px;
 }
 #quick-list{
     font-weight: 500;
+}
+
+/* some fact section */
+.fact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 241px);
+    gap: 124px;
+    margin-top: 100px;
+}
+.some-facts >p {
+    width: 540px;
+}
+.fact{
+    border: 1px solid #FF900E;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    height: 240px;
+}
+.fact-number{
+    font-size: 2.81rem;
+    font-weight: 600;
+    margin: 5px 0px 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
 }
 
 /* responsive design */
