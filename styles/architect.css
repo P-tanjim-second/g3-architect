@@ -131,8 +131,8 @@ nav {
     gap: 124px;
     margin-top: 100px;
 }
-.some-facts >p {
-    width: 540px;
+.some-facts > p {
+    max-width: 540px;
 }
 .fact{
     border: 1px solid #FF900E;
@@ -153,6 +153,19 @@ nav {
     font-size: 1.25rem;
     font-weight: 600;
     margin: 0;
+}
+
+/* our sponsors styling */
+.sponsor-info{
+    max-width: 540px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.sponsor-img{
+    filter: grayscale(100%);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 /* responsive design */
@@ -176,6 +189,19 @@ nav {
     .our-features{
         margin-left: 10px;
     }
+
+    .fact-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 25px;
+        margin-top: 50px;
+    }
+
+    .sponsor-img{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 50px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -185,13 +211,24 @@ nav {
     .team-img-container img{
         width: 80%;
     }
-    .team-img-container img:nth-child(odd){
+    .team-img-container img:nth-child(odd), .fact:nth-child(odd){
         justify-self: end;
     }
-    .team-img-container img:nth-child(even){
+    .team-img-container img:nth-child(even), .fact:nth-child(even){
         justify-self: start;
     }
     .our-features{
         margin: 0 auto;
+    }
+    .fact-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 25px;
+        margin-top: 50px;
+    }
+    .sponsor-img{
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 50px;
     }
 }
