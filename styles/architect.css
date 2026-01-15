@@ -124,6 +124,42 @@ nav {
     font-weight: 500;
 }
 
+/* features section */
+.features{
+    justify-content: space-between;
+    gap: 50px;
+}
+.features div h3{
+    padding-left: 20px;
+    border-left: 5px solid #FF900E;
+}
+
+.features>div>p{
+    max-width: 580px;
+    margin-bottom: 30px;
+    line-height: 26px;
+}
+.features div img{
+    width: 100%;
+}
+.feature-card{
+    max-width: 514px;
+    padding: 30px 40px 30px 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.features .feature-card h4{
+    font-size: 1.25rem;
+    margin: 5px 0;
+    font-weight: 600;
+}
+.features .feature-card p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+}
 /* some fact section */
 .fact-container {
     display: grid;
